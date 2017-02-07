@@ -1,0 +1,74 @@
+<html> 
+<head>
+<title>shubham</title>
+<script langauage="javascipt">
+function is()
+{
+ var un=document.fm.rr.value;
+ var gg=document.fm.gg.value;
+ var ss=document.fm.ww.value;
+ if(un=="")
+  {
+   alert("enter name");
+   return false;
+  }
+  else if(gg=="")
+  {
+  alert("enter password");
+  document.fm.gg.focus();
+  return false;
+  }
+  else if(ss=="")
+  {
+  alert("enter re pass");
+  document.fm.ww.focus();
+  return false;
+  }
+  else if(gg!=ss)
+  {
+  alert("password missmatch..!");
+  document.fm.ww.focus();
+  return false;
+  }
+ else 
+  {
+  document.fm.action="4.htm";
+  document.fm.submit();
+ }
+}
+</script>
+</head>
+<body><body bgcolor="chrome">
+<form name="fm" method="post">
+<H2> hello, this is my first page</H2>
+<H1> kartik is my brother </H1>
+<H1> <center> welcome  </center><H1>
+ 
+<table border=2border color="green" align="center" bgcolor= "yellow">
+<tr>
+<td>username</td>
+<td><input type text="text" name="rr" ></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>password</td>
+<td><input type="password" name="gg"></td>
+<td></td>
+</tr
+<tr>
+<td>re-password</td>
+<td><input type="password" name="ww"></td>
+<td></td>
+</tr>
+<tr>
+<td><input type="submit" value="login" onclick="is()">
+</tr>
+</table>
+</form>
+</body>
+</html>
